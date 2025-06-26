@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Rock Paper Scissors ✊✋✌️</h1>
+    
+    <div class="toggle-theme">
+      <label>
+        <input type="checkbox" id="theme-toggle">
+        🌙 Dark Mode
+      </label>
+    </div>
+
+    <div class="score-board">
+      <p>Player: <span id="player-score">0</span></p>
+      <p>Computer: <span id="computer-score">0</span></p>
+    </div>
+
+    <div class="buttons">
+      <button onclick="playGame('rock')">✊ Rock</button>
+      <button onclick="playGame('paper')">✋ Paper</button>
+      <button onclick="playGame('scissors')">✌️ Scissors</button>
+    </div>
+
+    <div class="result">
+      <h2 id="result-text">Make your move!</h2>
+    </div>
+
+    <button id="reset-btn" onclick="resetGame()">🔄 Reset</button>
+  </div>
+
+  <!-- Sound effects -->
+  <audio id="win-sound" src="https://www.soundjay.com/button/sounds/button-4.mp3"></audio>
+  <audio id="lose-sound" src="https://www.soundjay.com/button/sounds/button-10.mp3"></audio>
+  <audio id="draw-sound" src="https://www.soundjay.com/button/sounds/button-3.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+:root {
+  --bg-color: #f0f8ff;
+  --text-color: #000;
+  --card-color: rgba(255, 255, 255, 0.3);
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #fff;
+  --card-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+  margin: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+.game-container {
+  max-width: 500px;
+  margin: 80px auto;
+  background-color: var(--card-color);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.toggle-theme {
+  margin-bottom: 10px;
+}
+
+.score-board {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.buttons button,
+#reset-btn {
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttons button:hover,
+#reset-btn:hover {
+  background-color: #ffffff22;
+  transform: scale(1.05);
+}
+
+#reset-btn {
+  margin-top: 20px;
+  background-color: #ff6961;
+  color: white;
+}
+
+.result h2 {
+  margin-top: 30px;
+  font-size: 1.4rem;
+}
